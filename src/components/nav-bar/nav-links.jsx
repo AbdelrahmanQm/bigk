@@ -4,7 +4,7 @@ import SingleNavLink from "./single-nav-link";
 const NavLinks = () => {
   console.log(navBarContent);
   return (
-    <ul className="flex">
+    <ul className="flex gap-20 bg-darkBlack h-24 items-center justify-center text-md uppercase">
       {navBarContent.map((link, i) => (
         <SingleNavLink link={link} key={i} />
       ))}

@@ -2,7 +2,6 @@ export const navBarContent = [
   {
     linkName: "Home",
     linkDestination: "/",
-    subLinks: [{ subLinkName: "sub link", subLinkDestination: "/" }],
   },
   {
     linkName: "Supliments",
@@ -17,6 +16,9 @@ export const navBarContent = [
   {
     linkName: "About",
     linkDestination: "/",
-    subLinks: [{ subLinkName: "sub link", subLinkDestination: "/" }],
+  },
+  {
+    linkName: "Contact",
+    linkDestination: "/",
   },
 ];
