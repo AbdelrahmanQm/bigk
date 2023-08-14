@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./logo";
+import MenuButton from "./menu-button";
 import NavLinks from "./nav-links";
 import QuizButton from "./quiz-button";
 
@@ -16,6 +17,7 @@ const FullNave = () => {
         <div className="sm:block xs:hidden">
           <QuizButton />
         </div>
+        <MenuButton />
       </div>
     </nav>
   );
