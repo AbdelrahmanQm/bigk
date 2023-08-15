@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const FullNav = () => {
   const menuState = useSelector((state) => state.toggleMenu.value);
   return (
-    <nav className="bg-darkBlack relative">
+    <nav className="bg-darkBlack relative shadow-md">
       <div className="bg-darkBlack flex justify-between h-28 items-center max-w-[1650px] m-auto px-4 ">
         <div className="h-24 flex items-center ">
           <Logo />
