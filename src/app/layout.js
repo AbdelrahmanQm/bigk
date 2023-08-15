@@ -1,7 +1,9 @@
+//"use client";
 import "./globals.css";
 import { Noto_Sans } from "next/font/google";
 import NavLinks from "@/components/nav-bar/nav-links";
-import FullNave from "@/components/nav-bar/full-nav";
+import FullNav from "@/components/nav-bar/full-nav";
+import { Providers } from "./GlobalRedux/provider";
 
 const noto = Noto_Sans({
   subsets: ["latin"],
@@ -16,10 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={noto.className}>
-        <FullNave />
-        {children}
-      </body>
+      <Providers>
+        <body className={noto.className}>
+          <FullNav />
+          {children}
+        </body>
+      </Providers>
     </html>
   );
 }
