@@ -33,6 +33,7 @@ module.exports = {
         lightBlack: "#797979",
         black: "#404040",
         darkBlack: "#232323",
+        pureBlack: "#141414",
         white: "#ffffff",
       },
     },
